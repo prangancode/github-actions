@@ -15,3 +15,7 @@ jobs:
         env:
           PROJECT: "CI/CD"
         run: echo "This is a $PROJECT pipeline"
+      - name: Github Repo
+        run: |
+          echo "Gihub Repo : ${{github.repository}}"
+          echo "Github Branch : ${{github.ref}}"
