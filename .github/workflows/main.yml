@@ -1,0 +1,7 @@
+name: Github actions
+on : push 
+
+jobs :
+   runs-on : ubuntu-linux
+
+  steps:
