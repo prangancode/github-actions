@@ -1,7 +1,17 @@
-name: Github actions
-on : push 
-
-jobs :
-   runs-on : ubuntu-linux
-
-  steps:
+name: Github Actions
+on:
+  push:
+    branches:
+      - main
+jobs:
+  my-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: My first step
+        run: echo "Hello, World!"
+      - name: My second step
+        run: date
+      - name: My third step
+        env:
+          PROJECT: "CI/CD"
+        run: echo "This is a $PROJECT pipeline"
