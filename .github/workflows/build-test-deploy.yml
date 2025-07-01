@@ -111,7 +111,7 @@ jobs:
     if: github.ref == 'refs/heads/main' && github.event_name == 'push'
     environment:
       name: production
-      url: https://lustrous-sopapillas-17069b.netlify.app/
+      url: https://quiet-dasik-ee3839.netlify.app/
     steps:
       - name: Download build artifacts
         uses: actions/download-artifact@v4
